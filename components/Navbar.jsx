@@ -18,8 +18,8 @@ function Navbar() {
     </a>
 
     <div className="md:ml-96">
-      <Link className="text-lg from-neutral-800 text-black" href="/home">English</Link>
-      <Link className="text-lg from-neutral-600 text-black ml-8" href="/pageAmharic">Amharic</Link>
+      <Link className="text-xl from-neutral-950  text-black" href="/home">English</Link>
+      <Link className="text-xl from-neutral-950 text-black ml-8" href="/pageAmharic">Amharic</Link>
     </div>
 
     <div className="flex items-end md:space-x-6 md:mr-12">

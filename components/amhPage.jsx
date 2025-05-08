@@ -24,7 +24,7 @@ function amhPage() {
               <li key={index}>{item}</li>
             ))}
           </ul>
-          <Image 
+          <Image height={300}
             src={content.image}
             className='md:my-6 my-4 mx-auto flex justify-center md:mt- mt-10 md:mb- mb-6'
           />
