@@ -53,7 +53,7 @@ export default function LoginForm() {
             placeholder="Enter Password"
             value={password}
           />
-          <button className="bg-green-500 text-white font-bold text-lg cursor-pointer px-6 py-2 rounded-md">
+          <button className="bg-green-500 text-white font-bold text-lg cursor-pointer px-6 py-2 rounded-sm">
             Login
           </button>
           {error && (

@@ -14,7 +14,7 @@ function Footer() {
       <div className="md:pl-32 pl-5">
         <h1 className="md:text-xl text-lg md:ml-12 font-semibold">For more information</h1>
         <div className="flex md:px-5 md:space-x-4 space-x-2 md:pt-2 pt-2 md:text-xl text-xl md:pl-16">
-          <LuPhoneCall size={20} />
+          <LuPhoneCall size={25} />
           <span>0909112233</span>
         </div>
       </div>
