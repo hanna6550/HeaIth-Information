@@ -45,7 +45,7 @@ export default function Home() {
       </div>
 ))}
 
-<div className='md:mt-40 mt-20'><Footer/></div>   
+<div className='mt-44'><Footer/></div>   
     </div>
   )
 }

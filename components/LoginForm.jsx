@@ -34,7 +34,7 @@ export default function LoginForm() {
   };
 
   return (
-    <div className="grid place-items-center h-screen md:mx-0 mx-10">
+    <div className="grid place-items-center h-screen md:mx-0 mx-20">
       <div className="px-5 shadow-lg p-5 rounded-lg border-t-4 border-black">
         <h1 className="text-4xl font-bold my-4 text-center  pb-5">Login</h1>
 
