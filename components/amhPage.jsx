@@ -16,7 +16,7 @@ function amhPage() {
         key={content.id}
       >
         <div className='md:mx-20 mx-5'>
-          <h3 className='md:text-5xl text-2xl  text-center font-bold text-black md:mb-6 mb-2'>{content.title}</h3>
+          <h3 className='md:text-5xl text-2xl  text-center font-bold text-black md:mb-6 mb-2 md:pt- pt-3'>{content.title}</h3>
           <p className='md:my-10 my-5 text-gray-800 md:text-xl text-base'>{content.description}</p>
           <h2 className='text-xl md:pb-2 pb-1 font-medium font-serif'>{content.title} can be classified as:</h2>
           <ul className='list-disc list-inside text-lg text-gray-700 mb-8 md:ml-5'>

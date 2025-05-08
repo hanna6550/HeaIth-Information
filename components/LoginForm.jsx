@@ -34,7 +34,7 @@ export default function LoginForm() {
   };
 
   return (
-    <div className="grid place-items-center h-screen md:mx-0 mx-5">
+    <div className="grid place-items-center h-screen md:mx-0 mx-10">
       <div className="px-5 shadow-lg p-5 rounded-lg border-t-4 border-black">
         <h1 className="text-4xl font-bold my-4 text-center  pb-5">Login</h1>
 
@@ -65,7 +65,7 @@ export default function LoginForm() {
           {/* <Link className="text-sm mt-3 text-right" href={"/register"}>
             Don&apos;t have an account? <span className="underline">Register</span>
           </Link>   */}
-          <Link className="text-sm mt-3 text-right" href={'/termsConds'}>
+          <Link className="text-base mt-3 text-right" href={'/termsConds'}>
             I agree with all <span className="text-blue-500 underline">Terms & Conditions.</span>
           </Link>
         </form>

@@ -9,13 +9,13 @@ function Landing() {
   return (
     <div>
     <Navbar/>
-    <h1 className='md:text-5xl font-bold text-center md:mt-28 mt-10 md:mb-4'>Welcome to Health-Info</h1>
-    <div className=' md:mx-10 mx-5 md:mt-10 mt-3 md:grid md:grid-cols-2'>
+    <h1 className='md:text-5xl text-3xl font-bold text-center md:mt-28 mt-24 md:mb-4 md:mx-0 mx-4'>Welcome to Health-Info</h1>
+    <div className=' md:mx-10 mx-5 md:mt-10 mt-5 md:grid md:grid-cols-2'>
         <div className='md:px-20 px-5'>
             
             <h1 className=' md:text-2xl text-lg font-light text-gray-500 md:w-[100%]'><span className='font-bold text-4xl text-'>At Health-Info, </span> 
          we believe everyone deserves access to accurate and accessible health information. Our content is reviewed by medical professionals and tailored to meet your unique needs. From everyday health tips to in-depth resources, we are here to empower you every step of the way.</h1>
-            <Link className='flex justify-center bg-blue-400 md:text-3xl text-xl font-semibold md:rounded-xl rounded-xl text-white py-6 md:mt-14 mt-10 md:mx-32 border-black' href={'/home'}>Get Started</Link>
+            <Link className='flex justify-center bg-blue-400 md:text-3xl text-2xl font-semibold md:rounded-xl rounded-xl text-white md:py-6 py-3 md:mt-14 mt-8 md:mx-32 border-black' href={'/home'}>Get Started</Link>
             <h1 className='md:pt-12 pt-6 font-bold md:text-5xl text-3xl text-center'>We Care For Your Health !!!</h1>
         </div>
 
@@ -37,7 +37,7 @@ function Landing() {
         </div>
 
         
-    <div className='md:mt-40 mt-20'><Footer/></div>
+    <div className='mt-44'><Footer/></div>
     </div>
   )
 }
