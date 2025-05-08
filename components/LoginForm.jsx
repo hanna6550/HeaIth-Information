@@ -34,42 +34,57 @@ export default function LoginForm() {
   };
 
   return (
-    <div className="grid place-items-center h-screen md:mx-0 mx-5">
-      <div className="px-5 shadow-lg p-5 rounded-lg border-t-4 border-black">
-        <h1 className="text-4xl font-bold my-4 text-center  pb-5">Login</h1>
+    <div className="flex items-center justify-center min-h-screen px-4 md:px-0">
+  <div className="w-full max-w-md p-6 bg-white rounded-lg shadow-md border-t-4 border-black">
+    <h1 className="text-3xl md:text-4xl font-bold text-center mb-6">Login</h1>
 
-        <form onSubmit={handleSubmit} className="flex flex-col gap-3">
-          <h1 className="text-2xl font-bold">Phone Number</h1>
-          <input
-            onChange={(e) => setPhone(e.target.value)}
-            type="text"
-            placeholder="Enter Phone Number"
-            value={phone}
-          />
-          <h1 className="text-2xl font-bold">Password</h1>
-          <input
-            onChange={(e) => setPassword(e.target.value)}
-            type="password"
-            placeholder="Enter Password"
-            value={password}
-          />
-          <button className="bg-green-500 text-white font-bold text-lg cursor-pointer px-6 py-2 rounded-sm">
-            Login
-          </button>
-          {error && (
-            <div className="bg-red-500 text-white w-fit text-base py-1 px-3 rounded-md mt-2">
-              {error}
-            </div>
-          )}
-
-          {/* <Link className="text-sm mt-3 text-right" href={"/register"}>
-            Don&apos;t have an account? <span className="underline">Register</span>
-          </Link>   */}
-          <Link className="text-base mt-3 text-right" href={'/termsConds'}>
-            I agree with all <span className="text-blue-500 underline">Terms & Conditions.</span>
-          </Link>
-        </form>
+    <form onSubmit={handleSubmit} className="flex flex-col gap-4">
+      {/* Phone Number */}
+      <div>
+        <label className="text-lg font-semibold block mb-1">Phone Number</label>
+        <input
+          onChange={(e) => setPhone(e.target.value)}
+          type="text"
+          placeholder="Enter Phone Number"
+          value={phone}
+          className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-black"
+        />
       </div>
-    </div>
+
+      {/* Password */}
+      <div>
+        <label className="text-lg font-semibold block mb-1">Password</label>
+        <input
+          onChange={(e) => setPassword(e.target.value)}
+          type="password"
+          placeholder="Enter Password"
+          value={password}
+          className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-black"
+        />
+      </div>
+
+      {/* Login Button */}
+      <button
+        type="submit"
+        className="bg-green-500 hover:bg-green-600 text-white font-semibold py-2 rounded-md transition duration-300"
+      >
+        Login
+      </button>
+
+      {/* Error Message */}
+      {error && (
+        <div className="bg-red-500 text-white px-3 py-2 rounded-md text-sm text-center">
+          {error}
+        </div>
+      )}
+
+      {/* Terms & Conditions Link */}
+      <Link href="/termsConds" className="text-sm text-right hover:underline mt-2">
+        I agree with all <span className="font-medium text-blue-500">Terms & Conditions</span>.
+      </Link>
+    </form>
+  </div>
+</div>
+
   );
 }
